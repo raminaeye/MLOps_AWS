@@ -1,0 +1,27 @@
+# Python dependencies for the MLOps_AWS notebooks and scripts.
+# Install with: pip install -r requirements.txt
+#
+# The SageMaker notebooks are designed to run on a SageMaker notebook
+# instance, which already includes boto3, sagemaker, pandas, numpy,
+# scikit-learn and matplotlib. Install this file for local use.
+
+# AWS SDKs
+boto3>=1.20
+sagemaker>=2.50
+stepfunctions>=2.0          # Lesson 3: Step Functions SDK
+
+# Data handling and ML
+pandas>=1.3
+numpy>=1.21
+scikit-learn>=1.0
+joblib>=1.1
+tensorflow>=2.8             # Lesson 4 demos use tf.keras datasets
+nltk>=3.6                  # Lesson 2 Exercise 5: text preprocessing
+beautifulsoup4>=4.9        # Lesson 2 Exercise 5: HTML cleanup of reviews
+
+# Visualization
+matplotlib>=3.5
+
+# Utilities
+requests>=2.26
+jsonlines>=2.0             # Project: reading SageMaker data-capture JSONLines
